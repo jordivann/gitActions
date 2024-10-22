@@ -3,9 +3,22 @@ name: Iniciador
 on: [push]
 
 jobs: 
-  hola: 
-    runs-on: ubuntu-latest
-
+  hola:
     steps: 
       - name: hola mundo
         run: echo "Hola Mundo"
+
+      - name: touch file
+        run: touch hola.txt
+
+      - name: Set Text
+        run: echo "Hola Mundo" >> hola.txt
+
+      - name: Read file
+        run: cat hola.txt
+      
+    other:
+      runs-on: ubuntu-latest
+      steps: 
+        - name: LS
+          run: ls -al
