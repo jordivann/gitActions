@@ -7,7 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps: 
+      - name: Checkout
+        uses: actions/checkout@v4.2.1  
       - name: ls
-        run: |
-          echo "Hola Mundo" >> hola.txt
-          cat hola.txt
+        ##con pipe | puedo hacer multilinea
+        run: | 
+          chmod +x script.sh
+          ./script.sh
