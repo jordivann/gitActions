@@ -16,4 +16,4 @@ jobs:
           ./script.sh
 
       - name: ls
-        users: ./.github/actions/my-action
+        uses: ./.github/actions/my-action
