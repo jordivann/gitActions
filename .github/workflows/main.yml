@@ -36,6 +36,9 @@ jobs:
         image: redis
         ports:
           - 6379:6379
+        options: > 
+          --sysctl vm.overcommit_memory=1 # Habilitar overcommit_memory en Redis para evitar advertencias
+
 
     steps:
       - name: Test 
