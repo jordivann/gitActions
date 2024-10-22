@@ -8,6 +8,5 @@ runs:
   steps: 
     - name: Hola Mundo
       run: echo "hola mundo"
+      shell: bash
 
-    - name: ls
-      users: ./.github/actions/my-action
