@@ -38,5 +38,5 @@ jobs:
           - 6379:6379
 
     steps:
-      - name: test commit 
-        run: ls -la
+      - name: Test 
+        run: ls
