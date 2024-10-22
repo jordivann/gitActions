@@ -9,14 +9,14 @@ jobs:
       - name: hola mundo
         run: echo "Hola Mundo"
 
-      - name: touch file
-        run: touch hola.txt
+      # - name: touch file
+      #   run: touch hola.txt
 
-      - name: Set Text
-        run: echo "Hola Mundo" >> hola.txt
+      # - name: Set Text
+      #   run: echo "Hola Mundo" >> hola.txt
 
-      - name: Read file
-        run: cat hol  a.txt
+      # - name: Read file
+      #   run: cat hol  a.txt
       
     other:
       runs-on: ubuntu-latest
