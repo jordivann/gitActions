@@ -1,0 +1,13 @@
+name: "My Action"
+description: "Test my action"
+
+runs: 
+  using: "composite"
+
+
+  steps: 
+    - name: Hola Mundo
+      run: echo "hola mundo"
+
+    - name: ls
+      users: ./.github/actions/my-action
