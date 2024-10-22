@@ -9,7 +9,7 @@ jobs:
     
     steps:
       - name: Tests
-        run: echo "Valor ${{ secrets.MY_VARIABLE_2 }}"
+        run: echo "Valor ${{ vars.VAR_MY_SECRET_VAR_ACTIONS }}"
     #steps:
       #Usamos una action desde el market, si dice action es de git si dice usario es de un usuario.  
       # - name: Checkout
