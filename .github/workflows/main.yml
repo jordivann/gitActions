@@ -24,15 +24,15 @@ jobs:
       #   uses: ./.github/actions/my-action
 
 
-      #Servicios
-      services: 
-        mysql:
-          image: mysql:5.7
-          env: 
-            MYSQL_ROOT_PASSWORD: jordi
-          ports: 
-            - 3306:3306
+    #Servicios
+    services: 
+      mysql:
+        image: mysql:5.7
+        env: 
+          MYSQL_ROOT_PASSWORD: jordi
+        ports: 
+          - 3306:3306
 
-      steps:
-        - name: test commit 
-          run: ls -la
+    steps:
+      - name: test commit 
+        run: ls -la
