@@ -6,7 +6,7 @@ runs:
 
 
   steps: 
-    - name: Hola Mundo
-      run: echo "hola mundo"
+    - name: Hola Mundo desde Actions
+      run: echo "Te saludo desde Actions"
       shell: bash
 
