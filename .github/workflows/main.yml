@@ -1,4 +1,4 @@
-name: Test
+name: Ejemplo de composite
 
 on: [push]
 
@@ -6,6 +6,13 @@ jobs:
   say-hello: 
     runs-on: ubuntu-latest
     
+    env:
+    .MY_VAR: Mi variable de entorno
+    
+    steps:
+      - name: Test 
+        run: echo "Valor: $MY_VAR"
+
     #steps:
       #Usamos una action desde el market, si dice action es de git si dice usario es de un usuario.  
       # - name: Checkout
@@ -25,18 +32,14 @@ jobs:
 
 
     #Servicios
-    services: 
-      mysql:
-        image: mysql:5.7
-        env: 
-          MYSQL_ROOT_PASSWORD: jordi
-        ports: 
-          - 3306:3306
-      redis:
-        image: redis
-        ports:
-          - 6379:6379
-
-    steps:
-      - name: Test 
-        run: ls
+    # services: 
+    #   mysql:
+    #     image: mysql:5.7
+    #     env: 
+    #       MYSQL_ROOT_PASSWORD: jordi
+    #     ports: 
+    #       - 3306:3306
+    #   redis:
+    #     image: redis
+    #     ports:
+    #       - 6379:6379
