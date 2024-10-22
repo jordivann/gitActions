@@ -4,6 +4,7 @@ on: [push]
 
 jobs: 
   hola:
+    runs-on: ubuntu-latest
     steps: 
       - name: hola mundo
         run: echo "Hola Mundo"
@@ -15,7 +16,7 @@ jobs:
         run: echo "Hola Mundo" >> hola.txt
 
       - name: Read file
-        run: cat hola.txt
+        run: cat hol  a.txt
       
     other:
       runs-on: ubuntu-latest
